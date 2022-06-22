@@ -7,6 +7,9 @@ import scrapy
 
 
 class RecipeItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    spider = scrapy.Field()
+    url = scrapy.Field()
+    language = scrapy.Field()
+    json = scrapy.Field()
+    checksum = scrapy.Field()
+    timestamp = scrapy.Field()
